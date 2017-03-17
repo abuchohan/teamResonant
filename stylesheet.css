@@ -1,0 +1,223 @@
+@import url('reset.css');
+/*----------------------------Layout---------------------------------*/
+html {
+	font-family: 'Varela Round', sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%; 
+    background: #f4f4f4;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 1.5;
+    font-size: 100%;
+}
+h1,h2,h3,h4,p,ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+img {
+    max-width: 100%; height: auto;
+}
+a { 
+    text-decoration: none; color: deepskyblue;
+}
+
+
+.page-content {padding: 0 25px; max-width: 1111px; margin: 0 auto;}
+.page-content p {padding-bottom: 15px;}
+.header h1 {
+    font-size: 3.9rem;
+    padding: 100px 30px;
+    text-align: center;
+    color: aliceblue; 
+}
+.header.food h1{
+    background-image: url("images/food.jpg");
+}
+.header.finance h1 {
+    background-image: url("images/money.jpg");
+}
+.header.nclubs h1 {
+    background-image: url("images/money.jpg");
+}
+.header.hallshouses h1 {
+    background-image: url("images/money.jpg");
+}
+.header.health h1 {
+    background-image: url("images/money.jpg");
+}
+.header. h1 {
+    background-image: url("images/money.jpg");
+}
+
+
+.page-content h2 {
+    font-size: 1.6rem; 
+    color:#001d5d;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align:center;
+}
+.page-content ul li{list-style: none;}
+.main-content { background-color: !!!!!!!!!!!!!!!!;}
+.page-content {background: #f9f9f9;}
+.page-article{padding-top: 50px;}
+.page-footer {background-color:#001d5d;color: aliceblue;}
+.page-footer{
+        padding: 20px;
+        margin-top: 40px;
+    }
+/*-------------------------------Flexbox-----------------------------------*/
+
+
+@media screen and (min-width: 768px) {
+    .header h1 {
+        font-size: 5rem;
+        padding-top: px;
+    padding-bottom: 150px;
+    }
+    .main-content  {
+       display: flex;
+       flex-wrap: wrap;
+        background: lightskyblue ;
+
+    }
+    .page-article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    
+    .page-article1 {
+        flex: 1;
+        min-width: 330px;
+        background:;
+       
+    }
+    .image {
+        flex: 1;
+        padding-right: 20px;
+        max-width: 709px;
+    }
+    
+}
+@media screen and (max-width:1039px){
+    .image{
+        margin: 0 auto;
+    }
+    .page-article1 ol {
+        text-align: center;
+        list-style-position: inside;
+        padding: 0;
+    }  
+}
+/*-------------------------------IMAGE PADDING REMOVER---------------------------------*/
+@media screen and (max-width:1011px){
+    .image{
+        padding: 0;
+    }
+}  
+/*-----------------------ICONS NORMAL-----------------------*/
+
+
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    /*
+    
+   
+    padding-top:20px;
+*/
+}
+
+
+
+.icon:hover {
+ box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+
+}
+
+/*-------------------------------ICONS MOBILE-----------------------------*/
+@media screen and (max-width:760px){
+    .icons {
+        background: ;
+        display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-bottom: 20px;
+   justify-content: space-around;
+    }
+    .icons li{
+        padding: 10px;
+        flex: 1;
+        max-height: 120px;
+        max-width: 120px;
+        min-width: 80px;
+    }
+}
+
+/*-------------------------PAGE CONTENT CARDS------------------------------------*/
+
+.page-content-cards {
+  max-width: 1111px;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
+    padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.page-article2 {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.small-image {
+  align-self: center;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .page-article2 {
+    width: 48%;
+/* margin: 0 auto 2%;*/
+    min-width: 0;
+  }
+    .page-content-cards{
+        justify-content: space-between;
+    }
+}
+.page-article2 h2{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
