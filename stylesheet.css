@@ -27,8 +27,9 @@ a {
 }
 
 
-.page-content {padding: 0 25px; max-width: 1111px; margin: 0 auto;}
+.page-content {/*padding: 0 25px;*/ max-width: 1111px; margin: 0 auto;}
 .page-content p {padding-bottom: 15px;}
+.page-content a:hover {color: #004a97;}
 .header h1 {
     font-size: 3.9rem;
     padding: 100px 30px;
@@ -57,57 +58,79 @@ a {
 
 .page-content h2 {
     font-size: 1.6rem; 
-    color:#001d5d;
+    color:#004a97;
     padding-bottom: 15px;
     padding-top: 15px;
     text-align:center;
 }
 .page-content ul li{list-style: none;}
-.main-content { background-color: !!!!!!!!!!!!!!!!;}
-.page-content {background: #f9f9f9;}
-.page-article{padding-top: 50px;}
-.page-footer {background-color:#001d5d;color: aliceblue;}
-.page-footer{
-        padding: 20px;
-        margin-top: 40px;
+
+.main-content {
+    background: -moz-linear-gradient(top,  rgba(125,185,232,0.31) 1%, rgba(125,185,232,0.39) 12%, rgba(52,146,207,0.94) 92%, rgba(52,146,207,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(125,185,232,0.31) 1%,rgba(125,185,232,0.39) 12%,rgba(52,146,207,0.94) 92%,rgba(52,146,207,1) 100%);
+background: linear-gradient(to bottom,  rgba(125,185,232,0.31) 1%,rgba(125,185,232,0.39) 12%,rgba(52,146,207,0.94) 92%,rgba(52,146,207,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', endColorstr='#3492cf',GradientType=0 );
+}
+
+/*.page-content {background: #f9f9f9;}*/
+/*.page-article{padding-top: 50px;}*/
+.page-footer {background-color:#333333;color: aliceblue;padding: 20px;}
+.page-footer a:hover{ color: aliceblue; }
+.pre-footer{padding: 20px; background:#878787;color: aliceblue;}
+
+
+
+/*----------------------------------------Content-BOx----------------------------------------------*/
+
+.content-box{
+    background: #f9f9f9;
+    padding: 20px 20px;
+    
+}
+
+@media screen and (min-width:1111px) {
+    .content-box{
+        border-radius: 16px;
     }
+   .content-box.middle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+}
+
 /*-------------------------------Flexbox-----------------------------------*/
 
 
 @media screen and (min-width: 768px) {
     .header h1 {
         font-size: 5rem;
-        padding-top: px;
+/*        padding-top: px;*/
     padding-bottom: 150px;
     }
     .main-content  {
        display: flex;
        flex-wrap: wrap;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,004799+100&1+0,1+0,0+0,1+100 */
-background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(0,71,153,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(0,71,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(0,71,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#004799',GradientType=0 ); /* IE6-9 */
-
-
     }
     .page-article {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding-bottom: 20px;
     }
-    
+    .page-article p{
+        
+    }
     .page-article1 {
         flex: 1;
         min-width: 330px;
-        background:;
-       
+    }
+    .page-article1-text{
+        padding-top: 20px;
     }
     .image {
         flex: 1;
         padding-right: 20px;
         max-width: 709px;
+
     }
     
 }
@@ -122,11 +145,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', e
     }  
 }
 /*-------------------------------IMAGE PADDING REMOVER---------------------------------*/
-@media screen and (max-width:1011px){
+@media screen and (max-width:1008px){
     .image{
         padding: 0;
     }
-}  
+}
+
+@media screen and (min-width:1111px){
+    .page-content{margin-top: 10px;margin-bottom: 10px;}
+}
+@media screen and (min-width:1300px){
+    .page-content{margin-top: 60px;margin-bottom: 60px;}
+}
 /*-----------------------ICONS NORMAL-----------------------*/
 
 
@@ -138,11 +168,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', e
     justify-content: space-around;
     padding-bottom: 50px;
     padding-top: 30px;
-    /*
     
-   
-    padding-top:20px;
-*/
+  
 }
 
 
@@ -178,9 +205,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', e
   display: flex;
   flex-wrap: wrap;
   margin:0 auto;
-    padding-top: 70px;
-  padding-bottom: 70px;
+   /* padding-top: 70px;
+  padding-bottom: 70px;*/
 }
+
+
+
+
+
+
 
 .page-article2 {
   min-width: 100%;
