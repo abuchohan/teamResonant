@@ -51,7 +51,7 @@ a {
 .header.health h1 {
     background-image: url("images/money.jpg");
 }
-.header. h1 {
+.header.aboutus h1 {
     background-image: url("images/money.jpg");
 }
 
@@ -224,13 +224,6 @@ nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(
    /* padding-top: 70px;
   padding-bottom: 70px;*/
 }
-
-
-
-
-
-
-
 .page-article2 {
   min-width: 100%;
   display: flex;
@@ -257,6 +250,45 @@ nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(
     padding-top: 20px;
 }
 
+
+/*-----------------------------------------------------
+                ABOUT US PAGE
+--------------------------------------------------------*/
+
+
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 97px;
+}
+.member-img{
+    border: 15px solid white;
+    border-radius: 500px;
+    background: white;
+    max-height: 240px;
+    max-width: 240px;
+}
+.member-text{
+    max-width: 240px;
+    text-align: center;
+    margin: 0 auto;
+}
+.member p{
+    color: aliceblue;
+}
+.member h3 {
+    color: #696969;
+}
+.member{
+    padding: 10px;
+}
+.member h2{
+    color: aliceblue;
+}
 
 
 
