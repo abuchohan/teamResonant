@@ -80,6 +80,54 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 .pre-footer{padding: 20px; background:#878787;color: aliceblue;}
 
 
+/*--------------Accessibility-------------------------------*/
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; 
+    
+}
+
+/*----------------------------nabagation---------------------------------*/
+
+skiplinks {display: none;}
+
+nav { display: flex; justify-content: space-around; background-color: rgba(0,0,0,.6); position: relative;}
+
+nav ul { list-style: none; margin: 0; padding: 0;}
+nav > ul > li { float: left; }
+
+nav ul::after {content:''; display: block; clear: both;}
+nav ul li:hover > ul {display: block;}
+nav ul li a {display: block; color: #fff; padding: 10px 20px; text-decoration: none;}
+nav ul li a:hover {background-color: aqua;}
+
+nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(0,102,102,.8); }
+
 
 /*----------------------------------------Content-BOx----------------------------------------------*/
 
