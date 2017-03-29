@@ -58,6 +58,7 @@ a {
 
 .page-content h2 {
     font-size: 1.6rem; 
+    font-weight: bold;
     color:#004a97;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -85,7 +86,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 .content-box{
     background: #f9f9f9;
     padding: 20px 20px;
-    
 }
 
 @media screen and (min-width:1111px) {
@@ -96,12 +96,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
     margin-top: 30px;
     margin-bottom: 30px;
 } 
+    .content-box.first {
+        background: none;
+        color: white;
+        padding-top: 30px;
+    }
+    .content-box.first a{
+        color: steelblue;
+    }
+    .content-box.first a:hover{
+        color: white;
+    }
+    .content-box.first .image {
+        border: 15px solid white;
+    border-radius: 500px;
+    background: white;
+    }
+    .content-box.first .page-article1 {
+        padding-right: 80px;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    }
+}
+.content-box.first a{
+    text-decoration:underline;
 }
 
 /*-------------------------------Flexbox-----------------------------------*/
 
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .header h1 {
         font-size: 5rem;
 /*        padding-top: px;*/
@@ -115,41 +136,74 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: space-between;
     }
-    .page-article p{
-        
-    }
+    
     .page-article1 {
         flex: 1;
         min-width: 330px;
+        max-width: 500px; 
+        padding-right:20px;
     }
     .page-article1-text{
         padding-top: 20px;
     }
     .image {
         flex: 1;
-        padding-right: 20px;
-        max-width: 709px;
-
+        max-width: 300px;
+        max-height: 300px;
+        background: ;
     }
-    
+    .content-box.first .image{
+    margin-left: 50px;
+    }
+    .content-box.middle .image{
+        padding-top: 90px;
+        margin-right: 50px;
+    }
+    .content-box.last .image{
+      margin-right: 50px;
+    }
+    .content-box.first .page-article1 {
+        padding-top: 35px;
+    }
 }
+@media screen and (min-width:943px){
+    .content-box.first .image{
+    margin-left: 120px;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    }
+    .content-box.middle .image{
+        margin-right: 100px;
+    }
+    .content-box.last .image{
+      margin-right: 100px;
+    }
+}
+
 @media screen and (max-width:1039px){
     .image{
         margin: 0 auto;
-    }
-    .page-article1 ol {
+    } 
+}
+.page-article1 ol {
         text-align: center;
         list-style-position: inside;
         padding: 0;
-    }  
-}
-/*-------------------------------IMAGE PADDING REMOVER---------------------------------*/
-@media screen and (max-width:1008px){
-    .image{
-        padding: 0;
     }
+/*RIGHT HAND FLOATING IMAGES CODE*/
+@media screen and (max-width:769px){
+    .image {
+    max-width: 300px;
+        }
 }
+.content-box.middle .image {
+    order: 2;
+}
+.content-box.last .image {
+    order: 2;
+}
+    
+/*-------------------------------Content MARGIN ADAPTER---------------------------------*/
 
 @media screen and (min-width:1111px){
     .page-content{margin-top: 10px;margin-bottom: 10px;}
