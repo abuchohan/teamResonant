@@ -51,7 +51,7 @@ a {
 .header.health h1 {
     background-image: url("images/money.jpg");
 }
-.header.aboutus h1 {
+.header.creators h1 {
     background-image: url("images/money.jpg");
 }
 
@@ -63,6 +63,9 @@ a {
     padding-bottom: 15px;
     padding-top: 15px;
     text-align:center;
+}
+.page-content h3 {
+    font-weight: bold;
 }
 .page-content ul li{list-style: none;}
 
@@ -112,7 +115,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
     
 }
 
-/*----------------------------nabagation---------------------------------*/
+/*----------------------------navigation---------------------------------*/
 
 skiplinks {display: none;}
 
@@ -135,6 +138,13 @@ nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(
     background: #f9f9f9;
     padding: 20px 20px;
 }
+.content-box.first{
+    padding: 20px 0px;
+}
+.content-box.first .page-article1{
+    padding: 0 20px;
+}
+
 
 @media screen and (min-width:1111px) {
     .content-box{
@@ -146,11 +156,15 @@ nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(
 } 
     .content-box.first {
         background: none;
-        color: white;
+        color: black;
         padding-top: 30px;
+      
+    }
+    .content-box.first ol{
+        color: white;
     }
     .content-box.first a{
-        color: steelblue;
+        color: #004a97;
     }
     .content-box.first a:hover{
         color: white;
@@ -161,7 +175,12 @@ nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(
     background: white;
     }
     .content-box.first .page-article1 {
-        padding-right: 80px;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        margin-right: 80px;
+    }
+    .content-box.first .page-article1.box{
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0 80px 0 80px;
     }
 }
 .content-box.first a{
@@ -192,6 +211,11 @@ nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(
         min-width: 330px;
         max-width: 500px; 
         padding-right:20px;
+        
+    }
+    .page-article1.box{
+        background: #f9f9f9;
+        border-radius: 16px;
     }
     .page-article1-text{
         padding-top: 20px;
@@ -216,9 +240,22 @@ nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(
         padding-top: 35px;
     }
 }
+/*-----------------------------------THE HORIZONTAL LINE----------------------------------*/
+@media screen and (max-width:1111px){
+     hr{
+        margin: 20px 50px;
+        
+    }
+}
+@media screen and (min-width:1111px){
+    hr{
+        margin: 0 600px;
+    }
+}
+/*-----------------------------------IMAGE SIZING---------------------------------------------*/
 @media screen and (min-width:943px){
     .content-box.first .image{
-    margin-left: 120px;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    margin-left: 100px;
     }
     .content-box.middle .image{
         margin-right: 100px;
@@ -243,6 +280,7 @@ nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(
     .image {
     max-width: 300px;
         }
+    
 }
 .content-box.middle .image {
     order: 2;
