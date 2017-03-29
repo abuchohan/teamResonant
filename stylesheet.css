@@ -51,7 +51,7 @@ a {
 .header.health h1 {
     background-image: url("images/money.jpg");
 }
-.header.aboutus h1 {
+.header.creators h1 {
     background-image: url("images/money.jpg");
 }
 
@@ -113,7 +113,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
     background: white;
     }
     .content-box.first .page-article1 {
-        padding-right: 80px;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        padding-right: 80px;
     }
 }
 .content-box.first a{
@@ -170,7 +170,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 }
 @media screen and (min-width:943px){
     .content-box.first .image{
-    margin-left: 120px;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    margin-left: 120px;
     }
     .content-box.middle .image{
         margin-right: 100px;
