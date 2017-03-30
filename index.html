@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Students Guide to Manchester</title>
+    <meta name="description" content="By students, for students. Our comprehensive guide is developed to showcase what makes Manchester such a desirable location to study in.">
+    <meta keywords="Manchester, students, MMU, guide,">
+
+    <title>TITLE HERE</title>
+    <meta name="description" content="#">
+    <meta name="keywords" "Manchester, students, *ADD MORE*">
+    <meta name="geo.position" content="53.4692;2.2369">
+    <meta name="geo.placename" content="Geoffrey Manton building">
+<!--DOUBLE CHECK THIS TAG -->
+    <meta name="geo.region" content="ISO 3166-2:GB">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+</head>
+<body>
+<!-- Skiplinks --> 
+<p class=skiplinks> <a href="#content">Skip to content</a> <a href="#navigation">Skip to navigation</a> </p>
+    
+<!-- Navagation -->    
+<a href="#menu" class="menu-link">Menu</a>
+        
+        <nav class="menu" id="menu" role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="has-sub-menu"><a href="#" aria-haspopup="true">University</a>
+                    <ul class="sub-menu">
+                        <li><a href="revision.html">Revision</a></li>
+                        <li><a href="#">Where to find help</a></li>
+                        <li><a href="sports.html">Socieities</a></li>
+                        <li><a href="#">The Essentials</a></li>
+                        <li><a href="#">Apps</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Finance</a></li>
+                <li class="has-sub-menu"><a href="#" aria-haspopup="true">Living</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Halls and Houses</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Social</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub-menu"><a href="#" aria-haspopup="true">Entertainment</a>
+                    <ul class="sub-menu">
+                        <li><a href="sports.html" >Sport</a></li>
+                        <li><a href="music.html" >Music Venues</a></li>
+                        <li><a href="nclubs.html" >Night Clubs</a></li>
+                        <li><a href="museums.html" >Museums</a></li>
+				    </ul>
+                </li>
+                <li><a href="health.html" >Health</a></li>
+                <li><a href="transport.html" >Transport</a></li>
+                <li><a href="food.html" title="">Food</a></li>
+                <li><a href="creators.html" title="#">About Us</a></li>
+               
+            </ul>
+        </nav>
+    <script>
+    $(document).ready( function(e) {
+
+    var $menu = $('#menu'),
+      $menulink = $('.menu-link'),
+      $menuTrigger = $('.has-sub-menu > a');
+
+    $menulink.click(function(e) {
+        e.preventDefault();
+        $menulink.toggleClass('active');
+        $menu.toggleClass('active');
+    });
+
+    $menuTrigger.click(function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.toggleClass('active').next('ul').toggleClass('active');
+    });
+    e.preventDefault();
+
+});
+    </script>
+
+<!-- Body Content --> 
+    <section class="page-content" id="content" role="main">
+		<h1>The Students Guide to Manchester</h1>
+
+<p>Welcome to our comprehensive guide to the city of Manchester by students for students. This site provides you with a vast and insightful resource designed to help you transition smoothly throughout your university experience. Here you can find life hacks and the most essential, up-to-date answers to the questions first year students often have. We strive to cover an extensive range of popular topics to help construct a more pleasant experience whilst attending Manchester Metropolitan such as how to live on a budget, which societies exist and how to join one as well as the easiest way to transverse the city amongst many other matters.</p>
+
+    </section>
+<!-- Footer --> 
+    <footer class="page-footer" role="contentinfo"> 
+        <p>&copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2017</a> | THIS IS STUDENT COURSEWORK | TUTOR <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a> | <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid HTML</a> </p>
+    </footer>
+</body>
+</html>
