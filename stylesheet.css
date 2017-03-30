@@ -13,7 +13,7 @@ body {
     line-height: 1.5;
     font-size: 100%;
 }
-h1,h2,h3,h4,p,ul {
+h1,h2,h3,h4,p {
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
@@ -85,6 +85,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 
 /*--------------Accessibility-------------------------------*/
 
+.skiplinks {display: none;}
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -115,23 +116,114 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
     
 }
 
-/*----------------------------navigation---------------------------------*/
+/*------ Navigation ------*/
+.menu-link { display: none;}
+.menu { 
+    background-color: #004a97;
+    
+}
+.menu ul { 
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+}
 
-skiplinks {display: none;}
-
-nav { display: flex; justify-content: space-around; background-color: rgba(0,0,0,.6); position: relative;}
-
-nav ul { list-style: none; margin: 0; padding: 0;}
-nav > ul > li { float: left; }
-
-nav ul::after {content:''; display: block; clear: both;}
-nav ul li:hover > ul {display: block;}
-nav ul li a {display: block; color: #fff; padding: 10px 20px; text-decoration: none;}
-nav ul li a:hover {background-color: aqua;}
-
-nav ul ul {display: none; position: absolute; top: 100%; background-color: rgba(0,102,102,.8); }
+.menu > ul {
+text-align: center;
+    
+}
+.sub-menu {
+    text-align: left;
 
 
+}
+.menu ul li { 
+    padding: 0px;
+}
+.menu > ul > li { 
+    display: inline-block;
+}
+.menu ul li a { 
+    display: block; 
+    text-decoration: none;
+    color: #fff; 
+}
+.menu ul li > a { 
+    padding: 30px;
+}
+
+.menu ul li > a:hover { 
+    background-color: #47a6cc;
+}
+
+.menu ul ul { 
+  display: none; 
+  position: absolute; 
+  top:100%;
+  min-width: 160px;
+}
+
+.menu ul li:hover > ul { display: block; }
+.menu ul ul > li { position: relative; }
+.menu ul ul > li a { padding: 20px; height: auto; background-color: #3492cf; /* border: solid 1px #fff */}
+.menu ul ul > li a:hover { background-color: #47a6cc; color: #fff; }
+.menu ul ul ul { position: absolute; left: 100%; top:0; }
+
+/*-----------media------------------*/
+
+@media screen and (max-width: 1103px) { 
+    .menu ul li a  {
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 833px) { 
+    .menu ul li a  {
+        padding: 20px 10px;
+    }
+}
+
+@media all and (max-width: 768px) {
+  a.menu-link { display: block;
+      color: #fff;
+      background-color: #777777;
+      text-decoration: none;
+      padding: 20px;
+      text-align: center;
+    }
+    .sub-menu {
+    text-align: left;
+    padding: 8px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #fff;
+
+}
+    
+    .menu ul {text-align: left;}
+  .menu { clear: both; min-width: inherit; float: none;}
+  .menu, .menu > ul ul { overflow: hidden; max-height: 0; background-color: #004a97; }
+  .menu > li > ul.sub-menu { padding: 0px; border: none; }
+  .menu.active, .menu > ul ul.active { max-height: 100%; }
+  .menu ul { display: inline; }
+  .menu > ul { border-top: 1px solid #808080; }
+  .menu li, .menu > ul > li { display: block; }
+  .menu li a { color: #000; display: block; padding: 0.8em;   border-bottom: .1px solid #fff; position: relative; }
+  .menu li.has-sub-menu > a:after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 1.5em;
+    padding: 0.6em 0.5em;
+  }
+  .menu li.has-sub-menu > a.active:after {
+    content: "-";
+  }
+  .menu ul ul > li a { background-color: grey ; padding: 19px 18px 19px 50px; }
+  .menu ul ul, .menu ul ul ul { display: inherit; position: relative; left: auto; top:auto; border:none; }
+}
 /*----------------------------------------Content-BOx----------------------------------------------*/
 
 .content-box{
