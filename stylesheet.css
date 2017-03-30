@@ -26,11 +26,25 @@ img {
 a { 
     text-decoration: none; color: deepskyblue;
 }
+.main-heading {
+	font-size: 2rem;
+}
 
 
-.page-content {/*padding: 0 25px;*/ max-width: 1111px; margin: 0 auto;}
-.page-content p {padding-bottom: 15px;}
-.page-content a:hover {color: #004a97;}
+.page-content {
+	/*padding: 0 25px;*/
+	margin: auto;
+	max-width: 960px;
+}
+.page-content p {
+	padding-bottom: 15px;
+}
+.page-content a:hover {
+	color: #004a97;
+}
+.home-slideshow {
+	max-width: 50%;
+}
 .header h1 {
     font-size: 3.9rem;
     padding: 100px 30px;
@@ -86,14 +100,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 
 /*.page-content {background: #f9f9f9;}*/
 /*.page-article{padding-top: 50px;}*/
-.page-footer {background-color:#333333;color: aliceblue;padding: 20px; display: inline-block; width: 100%; text-align: center;}
-.page-footer a:hover{ color: aliceblue; }
-.pre-footer{padding: 20px; background:#878787;color: aliceblue;}
+.page-footer {
+	background-color:#333333;
+	color: aliceblue;padding: 20px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;}
+.page-footer a:hover{
+	color: aliceblue; }
+.pre-footer{
+	padding: 20px;
+	background:#878787;
+	color: aliceblue;}
 
 
 /*--------------Accessibility-------------------------------*/
 
-.skiplinks {display: none;}
+.skiplinks {
+	display: none;
+}
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -125,10 +150,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 }
 
 /*------ Navigation ------*/
-.menu-link { display: none;}
+.menu-link {
+	display: none;
+}
 .menu { 
     background-color: #004a97;
-    
 }
 .menu ul { 
   padding: 0px;
@@ -161,7 +187,7 @@ text-align: center;
     padding: 30px;
 }
 
-.skiplinks {display: none;}
+
 .menu ul li > a:hover { 
     background-color: #47a6cc;
 }
@@ -292,16 +318,14 @@ text-align: center;
 .thirds div {
     width: 100%;
     display: inline-flex;
-    padding: 15px;
-height: 200px;
-flex-wrap: no-wrap;
+	height: 200px;
+	flex-wrap:nowrap;
 }
 
 @media screen and (min-width: 769px) {
 .thirds div {
-        max-width: 30%;
+        max-width: 33.333%;
         float: left;
-	border: solid;
     }
     .header h1 {
         font-size: 5rem;
@@ -483,13 +507,13 @@ flex-wrap: no-wrap;
         justify-content: space-between;
     }
 }
-.page-article2 h2{
+	.page-article2 h2 {
     padding-top: 20px;
 }
 
 
 /*-----------------------------------------------------
-                ABOUT US PAGE
+                CONTRIBUTERS PAGE
 --------------------------------------------------------*/
 
 
