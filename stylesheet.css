@@ -117,7 +117,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 
 /*----------------------------navigation---------------------------------*/
 
-skiplinks {display: none;}
+.skiplinks {display: none;}
 
 nav { display: flex; justify-content: space-around; background-color: rgba(0,0,0,.6); position: relative;}
 
