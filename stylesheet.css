@@ -108,13 +108,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 	background-color:#333333;
 	color: aliceblue;
 	padding: 10px 0px 10px 0px;
-	display: inline-block;
+	display: inline-flex;
 	width: 100%;
 	text-align: center;
+	margin-top: 100px;
 }
 .page-footer a:hover{
 	color: aliceblue; }
 .pre-footer{
+	margin: 0;
 	padding: 20px;
 	background:#878787;
 	color: aliceblue;}
@@ -321,11 +323,16 @@ text-align: center;
 }
 
 /*-------------------------------Flexbox-----------------------------------*/
+.thirds {
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
 .thirds div {
+	padding: 0;
+	margin: 0;
     width: 100%;
-    display: inline-flex;
-	height: 200px;
-	flex-wrap:nowrap;
 }
 
 @media screen and (min-width: 769px) {
@@ -579,4 +586,21 @@ text-align: center;
 	margin: 0;
 	padding: 0;
 	line-height: normal;
+}
+
+.home-icon {
+	margin: auto;
+	max-width: 100px;
+	display: block;
+	margin-top: 15px;
+}
+h4 {
+	display: block;
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Oswald';
+}
+.home-icon-p {
+	text-align: center;
+	display: block;
 }
