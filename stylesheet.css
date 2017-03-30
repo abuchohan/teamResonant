@@ -7,7 +7,6 @@ html {
     background: #f4f4f4;
 }
 body {
-	box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: black;
@@ -26,57 +25,52 @@ img {
 a { 
     text-decoration: none; color: deepskyblue;
 }
-.main-heading {
-	font-size: 2rem;
-}
 
 
-.page-content {
-	/*padding: 0 25px;*/
-	margin: auto;
-	max-width: 960px;
-}
-.page-content p {
-	padding-bottom: 15px;
-}
-.page-content a:hover {
-	color: #004a97;
-}
-.home-slideshow {
-	max-width: 50%;
-}
+.page-content {/*padding: 0 25px;*/ max-width: 1111px; margin: 0 auto;}
+.page-content p {padding-bottom: 15px;}
+.page-content a:hover {color: #004a97;}
 .header h1 {
     font-size: 3.9rem;
     padding: 100px 30px;
     text-align: center;
     color: aliceblue;
-	background-attachment: fixed;
+			background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
+	
+}
 }
 .header.food h1{
     background-image: url("images/food.jpg");
+
 }
 .header.finance h1 {
     background-image: url("images/money.jpg");
+
 }
 .header.nclubs h1 {
     background-image: url("images/money.jpg");
+
 }
 .header.hallshouses h1 {
     background-image: url("images/money.jpg");
+
 }
 .header.health h1 {
     background-image: url("images/money.jpg");
+
 }
 .header.creators h1 {
     background-image: url("images/money.jpg");
+	
 }
-.header.transport h1 {
-    background-image: url("images/test2.jpg");
+.header. h1 {
+    background-image: url("images/money.jpg");
+	
 }
+
 
 .page-content h2 {
     font-size: 1.6rem; 
@@ -84,8 +78,7 @@ a {
     color:#004a97;
     padding-bottom: 15px;
     padding-top: 15px;
-    text-align:left;
-	font-family: 'Oswald'
+    text-align:center;
 }
 .page-content h3 {
     font-weight: bold;
@@ -101,27 +94,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 
 /*.page-content {background: #f9f9f9;}*/
 /*.page-article{padding-top: 50px;}*/
-.page-footer {
-	background-color:#333333;
-	color: aliceblue;
-	padding: 10px 0px 10px 0px;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-}
-.page-footer a:hover{
-	color: aliceblue; }
-.pre-footer{
-	padding: 20px;
-	background:#878787;
-	color: aliceblue;}
+.page-footer {background-color:#333333;color: aliceblue;padding: 20px;}
+.page-footer a:hover{ color: aliceblue; }
+.pre-footer{padding: 20px; background:#878787;color: aliceblue;}
 
 
 /*--------------Accessibility-------------------------------*/
 
-.skiplinks {
-	display: none;
-}
+.skiplinks {display: none;}
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -153,11 +133,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 }
 
 /*------ Navigation ------*/
-.menu-link {
-	display: none;
-}
+.menu-link { display: none;}
 .menu { 
     background-color: #004a97;
+    
 }
 .menu ul { 
   padding: 0px;
@@ -190,7 +169,7 @@ text-align: center;
     padding: 30px;
 }
 
-
+.skiplinks {display: none;}
 .menu ul li > a:hover { 
     background-color: #47a6cc;
 }
@@ -318,22 +297,13 @@ text-align: center;
 }
 
 /*-------------------------------Flexbox-----------------------------------*/
-.thirds div {
-    width: 100%;
-    display: inline-flex;
-	height: 200px;
-	flex-wrap:nowrap;
-}
 
 @media screen and (min-width: 769px) {
-.thirds div {
-        max-width: 33.333%;
-        float: left;
-    }
     .header h1 {
         font-size: 5rem;
 /*        padding-top: px;*/
     padding-bottom: 150px;
+
     }
     .main-content  {
        display: flex;
@@ -510,13 +480,13 @@ text-align: center;
         justify-content: space-between;
     }
 }
-	.page-article2 h2 {
+.page-article2 h2{
     padding-top: 20px;
 }
 
 
 /*-----------------------------------------------------
-                CONTRIBUTERS PAGE
+                ABOUT US PAGE
 --------------------------------------------------------*/
 
 
