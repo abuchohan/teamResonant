@@ -54,7 +54,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 .header.food h1{
     background-image: url("images/food.jpg");
