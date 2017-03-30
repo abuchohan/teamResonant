@@ -153,13 +153,10 @@ text-align: center;
     padding: 30px;
 }
 
-<<<<<<< HEAD
 .skiplinks {display: none;}
-=======
 .menu ul li > a:hover { 
     background-color: #47a6cc;
 }
->>>>>>> origin/master
 
 .menu ul ul { 
   display: none; 
@@ -509,21 +506,4 @@ text-align: center;
 .member h2{
     color: aliceblue;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
