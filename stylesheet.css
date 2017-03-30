@@ -26,9 +26,6 @@ img {
 a { 
     text-decoration: none; color: deepskyblue;
 }
-.main-heading {
-	font-size: 2rem;
-}
 
 
 .page-content {
@@ -37,13 +34,15 @@ a {
 	max-width: 960px;
 }
 .page-content p {
+	padding: 10px;
 	padding-bottom: 15px;
 }
 .page-content a:hover {
 	color: #004a97;
 }
 .home-slideshow {
-	max-width: 50%;
+	max-width: 100%;
+	max-height: 300px;
 }
 .header h1 {
     font-size: 3.9rem;
@@ -78,6 +77,8 @@ a {
     background-image: url("images/test2.jpg");
 }
 
+
+
 .page-content h2 {
     font-size: 1.6rem; 
     font-weight: bold;
@@ -85,7 +86,7 @@ a {
     padding-bottom: 15px;
     padding-top: 15px;
     text-align:left;
-	font-family: 'Oswald'
+	font-family: 'Oswald';
 }
 .page-content h3 {
     font-weight: bold;
@@ -554,3 +555,26 @@ text-align: center;
     color: aliceblue;
 }
 
+
+
+
+.main-heading {
+	font-size: 2.3rem;
+	font-family: 'Passion One', cursive;
+	margin: 0;
+	line-height:; 
+	padding: 0;
+	color: steelblue;
+	background-color: white;
+	max-width: 100%;
+}
+.sub-heading {
+	max-width: 100%;
+	background-color: white;
+	color: darkslateblue;
+	font-size: 1.3rem;
+	font-family: 'Oswald';
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
