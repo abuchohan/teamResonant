@@ -84,7 +84,8 @@ a {
     color:#004a97;
     padding-bottom: 15px;
     padding-top: 15px;
-    text-align:center;
+    text-align:left;
+	font-family: 'Oswald'
 }
 .page-content h3 {
     font-weight: bold;
@@ -102,10 +103,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 /*.page-article{padding-top: 50px;}*/
 .page-footer {
 	background-color:#333333;
-	color: aliceblue;padding: 20px;
+	color: aliceblue;
+	padding: 10px 0px 10px 0px;
 	display: inline-block;
 	width: 100%;
-	text-align: center;}
+	text-align: center;
+}
 .page-footer a:hover{
 	color: aliceblue; }
 .pre-footer{
