@@ -297,7 +297,7 @@ text-align: center;
 
 @media screen and (min-width: 769px) {
 .thirds div {
-        width: 33.32%;
+        width: 33%;
         float: left;
     }
     .header h1 {
