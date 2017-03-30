@@ -1,81 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-gb">
-
-<head>
-    <meta charset="utf-8">
+<?php include ("header.php"); ?>
     <title>Finance</title>
     <meta name="description" content="#">
     <meta keywords="Manchester, students, *ADD MORE*">
-    <meta name="geo.position" content="53.4692;2.2369">
-    <meta name="geo.placename" content="Geoffrey Manton building">
-<!--DOUBLE CHECK THIS TAG -->
-    <meta name="geo.region" content="ISO 3166-2:GB">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-</head>
-<body>
-<!-- Skiplinks --> 
-<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-    <a class="skip-link screen-reader-text" href="#navigation">Skip to navigation</a>
-    <header class="header finance">
-<!-- Navagation -->    
-<a href="#menu" class="menu-link">Menu</a>
-        
-        <nav class="menu" id="menu" role="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="has-sub-menu"><a aria-haspopup="true">University</a>
-                    <ul class="sub-menu">
-                        <li><a href="revision.html">Revision</a></li>
-                        <!-- <li><a href="#">Where to find help</a></li> -->
-                        <li><a href="social.html">Social</a></li>
-                        <li><a href="eqguide.html">The Essentials</a></li>
-                        <li><a href="applications.html">Applications</a></li>
-                        <!-- <li><a href="courses.html">Courses</a></li> -->
-                    </ul>
-                </li>
-                <li><a href="finance.html">Finance</a></li>
-                <li class="has-sub-menu"><a href="#" aria-haspopup="true">Living</a>
-                    <ul class="sub-menu">
-                        <li><a href="hallshouses.html">Halls and Houses</a></li>
-                        <li><a href="transport.html">Safety</a></li>
-                        <li><a href="social.html">Social</a></li>
-                    </ul>
-                </li>
-                <li class="has-sub-menu"><a aria-haspopup="true">Entertainment</a>
-                    <ul class="sub-menu">
-                        <li><a href="sports.html" >Sports</a></li>
-                        <!-- <li><a href="music.html" >Music Venues</a></li> -->
-                        <li><a href="nclubs.html" >Night Clubs</a></li>
-                        <!-- <li><a href="museums.html" >Museums</a></li> -->
-				    </ul>
-                </li>
-                <li><a href="health.html" >Health</a></li>
-                <li><a href="transport.html" >Transport</a></li>
-                <li><a href="food.html" title="">Food</a></li>
-                <li><a href="creators.html" title="#">Creators</a></li>
-               
-            </ul>
-        </nav>
-    <script>
-    $(document).ready( function(e) {
-    var $menu = $('#menu'),
-      $menulink = $('.menu-link'),
-      $menuTrigger = $('.has-sub-menu > a');
-    $menulink.click(function(e) {
-        e.preventDefault();
-        $menulink.toggleClass('active');
-        $menu.toggleClass('active');
-    });
-    $menuTrigger.click(function(e) {
-        e.preventDefault();
-        var $this = $(this);
-        $this.toggleClass('active').next('ul').toggleClass('active');
-    });
-    e.preventDefault();
-});
-    </script>
+
+
+     <header class="header finance">
+    <?php include ("navigation.php"); ?>
+    
+
     <h1>Finance</h1>
      </header>
 <!---------------------------------- Body Content ------------------------------------> 
