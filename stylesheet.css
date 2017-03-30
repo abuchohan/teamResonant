@@ -291,8 +291,10 @@ text-align: center;
 /*-------------------------------Flexbox-----------------------------------*/
 .thirds div {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     padding: 15px;
+height: 200px;
+	flex-wrap: no-wrap;
 }
 
 @media screen and (min-width: 769px) {
