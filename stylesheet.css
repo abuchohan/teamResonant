@@ -7,6 +7,7 @@ html {
     background: #f4f4f4;
 }
 body {
+	box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: black;
@@ -296,7 +297,7 @@ text-align: center;
 
 @media screen and (min-width: 769px) {
 .thirds div {
-        width: 33.33333%;
+        width: 33.32%;
         float: left;
     }
     .header h1 {
