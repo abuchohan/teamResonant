@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TITLE HERE</title>
-    <meta name="description" content="#">
-    <meta name="keywords" content="Manchester, students, *ADD MORE*">
+    <title>The Students Guide to Manchester</title>
+    <meta name="description" content="By students, for students. Our comprehensive guide is developed to showcase what makes Manchester such a desirable location to study in.">
+    <meta keywords="Manchester, students, MMU, guide,">
     <meta name="geo.position" content="53.4692;2.2369">
     <meta name="geo.placename" content="Geoffrey Manton building">
 <!--DOUBLE CHECK THIS TAG -->
@@ -13,6 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
+	<style>
+    
+	</style>
     
 </head>
 <body>
@@ -24,37 +27,37 @@
         
         <nav class="menu" id="menu" role="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li class="has-sub-menu"><a href="#" aria-haspopup="true">University</a>
+                <li><a href="index.html">Home</a></li>
+                <li class="has-sub-menu"><a aria-haspopup="true">University</a>
                     <ul class="sub-menu">
                         <li><a href="revision.html">Revision</a></li>
-                        <li><a href="#">Where to find help</a></li>
-                        <li><a href="sports.html">Socieities</a></li>
-                        <li><a href="#">The Essentials</a></li>
-                        <li><a href="#">Apps</a></li>
-                        <li><a href="courses.html">Courses</a></li>
+                        <!-- <li><a href="#">Where to find help</a></li> -->
+                        <li><a href="social.html">Social</a></li>
+                        <li><a href="eqguide.html">The Essentials</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                        <!-- <li><a href="courses.html">Courses</a></li> -->
                     </ul>
                 </li>
-                <li><a href="#">Finance</a></li>
+                <li><a href="finance.html">Finance</a></li>
                 <li class="has-sub-menu"><a href="#" aria-haspopup="true">Living</a>
                     <ul class="sub-menu">
-                        <li><a href="#">Halls and Houses</a></li>
-                        <li><a href="#">Safety</a></li>
-                        <li><a href="#">Social</a></li>
+                        <li><a href="hallshouses.html">Halls and Houses</a></li>
+                        <li><a href="transport.html">Safety</a></li>
+                        <li><a href="social.html">Social</a></li>
                     </ul>
                 </li>
-                <li class="has-sub-menu"><a href="#" aria-haspopup="true">Entertainment</a>
+                <li class="has-sub-menu"><a aria-haspopup="true">Entertainment</a>
                     <ul class="sub-menu">
-                        <li><a href="sports.html" >Sport</a></li>
-                        <li><a href="music.html" >Music Venues</a></li>
+                        <li><a href="sports.html" >Sports</a></li>
+                        <!-- <li><a href="music.html" >Music Venues</a></li> -->
                         <li><a href="nclubs.html" >Night Clubs</a></li>
-                        <li><a href="museums.html" >Museums</a></li>
+                        <!-- <li><a href="museums.html" >Museums</a></li> -->
 				    </ul>
                 </li>
                 <li><a href="health.html" >Health</a></li>
                 <li><a href="transport.html" >Transport</a></li>
                 <li><a href="food.html" title="">Food</a></li>
-                <li><a href="creators.html" title="#">About Us</a></li>
+                <li><a href="creators.html" title="#">Creators</a></li>
                
             </ul>
         </nav>
@@ -80,10 +83,39 @@
 
 });
     </script>
+
 <!-- Body Content --> 
-    <main class="page-content" id="content" role="main">
-    </main>
-<p>Hello World!</p>
+    <section class="page-content" id="content" role="main">
+		<h1>The Students Guide to Manchester</h1>
+
+<p>Welcome to our comprehensive guide to the city of Manchester by students for students. This site provides you with a vast and insightful resource designed to help you transition smoothly throughout your university experience. Here you can find life hacks and the most essential, up-to-date answers to the questions first year students often have. We strive to cover an extensive range of popular topics to help construct a more pleasant experience whilst attending Manchester Metropolitan such as how to live on a budget, which societies exist and how to join one as well as the easiest way to transverse the city amongst many other matters.</p>
+<img src="indeximages/image-1.jpg" id="mainImage">
+<div class="thirds">
+	<div>hi</div>
+	<div>hi</div>
+	<div>hi</div>
+</div>
+    </section>
+	
+	<script>
+//slide show image script
+var myImage = document.getElementById("mainImage");
+var imageArray = ["indeximages/image-1.jpg","indeximages/image-2.jpg","indeximages/image-3.jpg","indeximages/image-4.jpg","indeximages/image-5.jpg"];
+var imageIndex = 0;
+function changeImage() {
+myImage.setAttribute("src",imageArray[imageIndex]);
+imageIndex++;
+if (imageIndex >= imageArray.length) {
+imageIndex = 0;
+} }
+var intervalHandle = setInterval(changeImage, 3000);
+// onclick stop images from changing
+myImage.onclick = function() {
+	clearInterval(intervalHandle);
+};
+
+</script>
+	
 <!-- Footer --> 
     <footer class="page-footer" role="contentinfo"> 
         <p>&copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2017</a> | THIS IS STUDENT COURSEWORK | TUTOR <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a> | <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid HTML</a> </p>

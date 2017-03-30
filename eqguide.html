@@ -20,66 +20,89 @@
     <a class="skip-link screen-reader-text" href="#navigation">Skip to navigation</a>
     <header class="header nclubs">
 <!-- Navagation -->    
-  <nav class="page-nav" id="navigation" role="navigation">
-        <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li>
-                <a href="" aria-haspopup="true">University</a>
-				<ul>
-                    <li><a href="uniforyou.html" >Is University for you?</a></li>
-					<li><a href="revision.html">Revision</a></li>
-					<li><a href="help.html">Where to find help</a></li>
-					<li><a href="societies.html" >Socieities</a></li>
-					<li><a href="eqguide.html" >The Essentials</a></li>
-					<li><a href="apps.html" >Apps</a></li>
-					<li><a href="courses.html" >courses</a></li>
-				</ul>
-            </li>
-            <li><a href="finance.html" >Finance</a></li>
-            <li>
-                <a href="" aria-haspopup="true">Living</a>
-				<ul>
-					<li><a href="hallshouses.html" >Halls and Houses</a></li>
-					<li><a href="safety.html" >Safety</a></li>
-					<li><a href="social.html" >Social</a></li>
-				</ul>
-            </li>
-            <li><a href="#" aria-haspopup="true">Entertainment</a>
-                <ul>
-					<li><a href="hallshouses.html" >Sport</a></li>
-					<li><a href="music.html" >Music Venues</a></li>
-					<li><a href="nclubs.html" >Night Clubs</a></li>
-                    <li><a href="meseums.html" >Meseums</a></li>
-				</ul>
-            </li>
-            <li><a href="health.html" >Health</a></li>
-            <li><a href="transport.html" >Transport</a></li>
-			<li><a href="food.html" title="">Food</a></li>
-<<<<<<< HEAD
-            </li><a href="creators.html" title="#">About Us</a></li>
-=======
-            <li><a href="aboutus.html" >About Us</a></li>
->>>>>>> refs/remotes/origin/master
-        </ul>
-    </nav>
+<a href="#menu" class="menu-link">Menu</a>
+        
+        <nav class="menu" id="menu" role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="has-sub-menu"><a aria-haspopup="true">University</a>
+                    <ul class="sub-menu">
+                        <li><a href="revision.html">Revision</a></li>
+                        <!-- <li><a href="#">Where to find help</a></li> -->
+                        <li><a href="social.html">Social</a></li>
+                        <li><a href="eqguide.html">The Essentials</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                        <!-- <li><a href="courses.html">Courses</a></li> -->
+                    </ul>
+                </li>
+                <li><a href="finance.html">Finance</a></li>
+                <li class="has-sub-menu"><a href="#" aria-haspopup="true">Living</a>
+                    <ul class="sub-menu">
+                        <li><a href="hallshouses.html">Halls and Houses</a></li>
+                        <li><a href="transport.html">Safety</a></li>
+                        <li><a href="social.html">Social</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub-menu"><a aria-haspopup="true">Entertainment</a>
+                    <ul class="sub-menu">
+                        <li><a href="sports.html" >Sports</a></li>
+                        <!-- <li><a href="music.html" >Music Venues</a></li> -->
+                        <li><a href="nclubs.html" >Night Clubs</a></li>
+                        <!-- <li><a href="museums.html" >Museums</a></li> -->
+				    </ul>
+                </li>
+                <li><a href="health.html" >Health</a></li>
+                <li><a href="transport.html" >Transport</a></li>
+                <li><a href="food.html" title="">Food</a></li>
+                <li><a href="creators.html" title="#">Creators</a></li>
+               
+            </ul>
+        </nav>
+    <script>
+    $(document).ready( function(e) {
+
+    var $menu = $('#menu'),
+      $menulink = $('.menu-link'),
+      $menuTrigger = $('.has-sub-menu > a');
+
+    $menulink.click(function(e) {
+        e.preventDefault();
+        $menulink.toggleClass('active');
+        $menu.toggleClass('active');
+    });
+
+    $menuTrigger.click(function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.toggleClass('active').next('ul').toggleClass('active');
+    });
+    e.preventDefault();
+
+});
+    </script>
+
     <h1>The Essential Gear</h1>
      </header>
 <!------------------------------------- Body Content -----------------------------------------------------> 
     <main class="main-content" id="content" role="main">
           <div class="page-content">
-          <div class="content-box first">
-          <div class="page-article">
+          	<div class="content-box first">
+          	<div class="page-article">
           <img src="images/about_us_pics/ivo%20pic.png" alt="boller in a basket" class="image">
            <div class="page-article1 box">
             <h2 id="budgeting"> What does a Student Need ? </h2>
-            <p>Lorem Manchester’s nightlife simply speaks for itself. It has become a staple of Manchester’s identity and is something every student needs to experience Assignments stressing you out? Flat mates annoying you? Craving Sambuca? Manchester has you covered and we’ve listed the top 5 clubs to fulfil your alcohol related desires. </p>
+            <p>Taking your education to the next level has proven to be a daunting task. Here we've curated an essential guide to the necessities.</p>
                   </div>
                    </div>
                    <hr>
         </div>
         <div class="content-box middle">
-            <p><h2>1. Tip/App </h2>Lorem Three levels of RnB, House and Cheesy Pop. Cheap drinks. One messy night guaranteed. Dress code: Casual Where is it? 118 Princess St, Manchester M1 7EN (small picture of it on google maps)<br> 
-<h2>2. Tip </h2>Lorem Oasis fanatic? For all the lovers of indie rock, this is the place for you. Dress code: Casual Where is it? 2 Bootle St, Manchester M2 5GU (small picture of it on google maps) <br>
+            <h2>1. Bring a pen</h2>
+			<p>You'd be horrified if you knew how many people turned up to their lectures without the most basic equipment. You will more than likely need a pen even if its to sign into the register.
+				
+			<h2>2. Bring a computer</h2>
+			<p></p>
+			
 <h2>3. Tip/App </h2>Lorem Eight stylish bars under one roof. This is the place to be. Did I mention there's eight bars? Dress code: Smart Where is it? The Printworks, 27 Withy Grove, Manchester M4 2BS (small picture of it on google maps) <br>
 <h2>4. Tip </h2>Lorem Gin parlour, classy live music, and a grill menu. I bet I had you at Gin. Dress code: Casual Where is it? 54-56 Whitworth St W, Manchester M1 5WW (small picture of it on google maps)<br> 
 <h2>5. Tip </h2>Lorem Dirt cheap drinks, your favourite cheesy classic and, everyone's guilty pleasure. Dress code: Casual Where is it? 121 Princess St, Manchester M1 7AG (small picture of it on google maps)</p>

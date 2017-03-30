@@ -7,6 +7,7 @@ html {
     background: #f4f4f4;
 }
 body {
+	box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: black;
@@ -34,7 +35,12 @@ a {
     font-size: 3.9rem;
     padding: 100px 30px;
     text-align: center;
-    color: aliceblue; 
+    color: aliceblue;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 .header.food h1{
     background-image: url("images/food.jpg");
@@ -54,7 +60,9 @@ a {
 .header.creators h1 {
     background-image: url("images/money.jpg");
 }
-
+.header.transport h1 {
+    background-image: url("images/test2.jpg");
+}
 
 .page-content h2 {
     font-size: 1.6rem; 
@@ -78,7 +86,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 
 /*.page-content {background: #f9f9f9;}*/
 /*.page-article{padding-top: 50px;}*/
-.page-footer {background-color:#333333;color: aliceblue;padding: 20px;}
+.page-footer {background-color:#333333;color: aliceblue;padding: 20px; display: inline-block; width: 100%; text-align: center;}
 .page-footer a:hover{ color: aliceblue; }
 .pre-footer{padding: 20px; background:#878787;color: aliceblue;}
 
@@ -153,6 +161,7 @@ text-align: center;
     padding: 30px;
 }
 
+.skiplinks {display: none;}
 .menu ul li > a:hover { 
     background-color: #47a6cc;
 }
@@ -172,7 +181,7 @@ text-align: center;
 
 /*-----------media------------------*/
 
-@media screen and (max-width: 1103px) { 
+@media screen and (max-width: 1120px) { 
     .menu ul li a  {
         padding: 20px 15px;
     }
@@ -280,8 +289,20 @@ text-align: center;
 }
 
 /*-------------------------------Flexbox-----------------------------------*/
+.thirds div {
+    width: 100%;
+    display: inline-flex;
+    padding: 15px;
+height: 200px;
+flex-wrap: no-wrap;
+}
 
 @media screen and (min-width: 769px) {
+.thirds div {
+        max-width: 30%;
+        float: left;
+	border: solid;
+    }
     .header h1 {
         font-size: 5rem;
 /*        padding-top: px;*/
@@ -505,21 +526,4 @@ text-align: center;
 .member h2{
     color: aliceblue;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
