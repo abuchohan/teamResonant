@@ -42,7 +42,7 @@
                 <li><a href="#">Finance</a></li>
                 <li class="has-sub-menu"><a href="#" aria-haspopup="true">Living</a>
                     <ul class="sub-menu">
-                        <li><a href="#">Halls and Houses</a></li>
+                        <li><a href="hallshouses.html">Halls and Houses</a></li>
                         <li><a href="#">Safety</a></li>
                         <li><a href="#">Social</a></li>
                     </ul>
@@ -90,8 +90,28 @@
 		<h1>The Students Guide to Manchester</h1>
 
 <p>Welcome to our comprehensive guide to the city of Manchester by students for students. This site provides you with a vast and insightful resource designed to help you transition smoothly throughout your university experience. Here you can find life hacks and the most essential, up-to-date answers to the questions first year students often have. We strive to cover an extensive range of popular topics to help construct a more pleasant experience whilst attending Manchester Metropolitan such as how to live on a budget, which societies exist and how to join one as well as the easiest way to transverse the city amongst many other matters.</p>
+<img src="indeximages/image-1.jpg" id="mainImage">
 
     </section>
+	
+	<script>
+//slide show image script
+var myImage = document.getElementById("mainImage");
+var imageArray = ["indeximages/image-1.jpg","indeximages/image-2.jpg","indeximages/image-3.jpg","indeximages/image-4.jpg","indeximages/image-5.jpg"];
+var imageIndex = 0;
+function changeImage() {
+myImage.setAttribute("src",imageArray[imageIndex]);
+imageIndex++;
+if (imageIndex >= imageArray.length) {
+imageIndex = 0;
+} }
+var intervalHandle = setInterval(changeImage, 3000);
+// onclick stop images from changing
+myImage.onclick = function() {
+	clearInterval(intervalHandle);
+};
+
+</script>
 <!-- Footer --> 
     <footer class="page-footer" role="contentinfo"> 
         <p>&copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2017</a> | THIS IS STUDENT COURSEWORK | TUTOR <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a> | <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid HTML</a> </p>
