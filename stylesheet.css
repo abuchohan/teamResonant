@@ -173,7 +173,7 @@ text-align: center;
 
 /*-----------media------------------*/
 
-@media screen and (max-width: 1103px) { 
+@media screen and (max-width: 1120px) { 
     .menu ul li a  {
         padding: 20px 15px;
     }
