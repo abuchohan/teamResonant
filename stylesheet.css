@@ -291,19 +291,17 @@ text-align: center;
 /*-------------------------------Flexbox-----------------------------------*/
 .thirds div {
     width: 100%;
-    display: flex;
+    display: inline-flex;
     padding: 15px;
 height: 200px;
-	flex-wrap: no-wrap;
+flex-wrap: no-wrap;
 }
 
 @media screen and (min-width: 769px) {
 .thirds div {
-	margin: 0;
-        width: 33%;
+        width: 30%;
         float: left;
 	border: solid;
-	padding: 0;
     }
     .header h1 {
         font-size: 5rem;
