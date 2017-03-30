@@ -20,7 +20,7 @@
     <a class="skip-link screen-reader-text" href="#navigation">Skip to navigation</a>
     <header class="header nclubs">
 <!-- Navagation -->    
- <a href="#menu" class="menu-link">Menu</a>
+<a href="#menu" class="menu-link">Menu</a>
         
         <nav class="menu" id="menu" role="navigation">
             <ul>
@@ -60,22 +60,27 @@
         </nav>
     <script>
     $(document).ready( function(e) {
+
     var $menu = $('#menu'),
       $menulink = $('.menu-link'),
       $menuTrigger = $('.has-sub-menu > a');
+
     $menulink.click(function(e) {
         e.preventDefault();
         $menulink.toggleClass('active');
         $menu.toggleClass('active');
     });
+
     $menuTrigger.click(function(e) {
         e.preventDefault();
         var $this = $(this);
         $this.toggleClass('active').next('ul').toggleClass('active');
     });
     e.preventDefault();
+
 });
     </script>
+
     <h1>The Essential Gear</h1>
      </header>
 <!------------------------------------- Body Content -----------------------------------------------------> 
