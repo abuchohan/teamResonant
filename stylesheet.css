@@ -34,7 +34,12 @@ a {
     font-size: 3.9rem;
     padding: 100px 30px;
     text-align: center;
-    color: aliceblue; 
+    color: aliceblue;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 .header.food h1{
     background-image: url("images/food.jpg");
