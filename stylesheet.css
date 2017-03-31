@@ -94,7 +94,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f7db9e8', e
 
 /*.page-content {background: #f9f9f9;}*/
 /*.page-article{padding-top: 50px;}*/
-.page-footer {background-color:#333333;color: aliceblue;padding: 20px;}
+.page-footer {
+	background-color:#333333;
+	color: aliceblue;
+	padding: ;
+	max-width: 100%;
+}
 .page-footer a:hover{ color: aliceblue; }
 .pre-footer{padding: 20px; background:#878787;color: aliceblue;}
 
@@ -297,8 +302,20 @@ text-align: center;
 }
 
 /*-------------------------------Flexbox-----------------------------------*/
-
+.thirds {
+	display: flex;
+	justify-content: space-around;
+}
+.thirds div {
+	width: 33.333%;
+	height: 200px;
+	
 @media screen and (min-width: 769px) {
+	.thirds div {
+		flex: 1;
+		justify-content: space-between;
+ 
+	}
     .header h1 {
         font-size: 5rem;
 /*        padding-top: px;*/
